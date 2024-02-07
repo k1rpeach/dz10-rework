@@ -24,10 +24,11 @@ let timer = setInterval(countDown, 1000)
 
 countDown()
 
-function hold(elem, value){
-    if(elem<10){
-        value.innerHTML = `0${elem}`;
-    }else{
-        value.innerHTML = elem;
+function hold(elem, value) {
+    if (elem < 10) {
+        value.textContent = `0${elem}`;
+    } else {
+        value.textContent = elem;
     }
 }
+
